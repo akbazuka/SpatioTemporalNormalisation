@@ -2,7 +2,7 @@
 
 This repository consists of 3 jupyter notebooks that come together in order to display the optimal normalisation strategy for SpatioTemporal Graphs.
 
-The conclusion from running our experiments were that the [UnitedNorm](https://arxiv.org/pdf/2009.11746.pdf) technique that utilises a coalescence of LayerNorm, InstanceNorm, BatchNorm, GraphNorm and TemporalNorm is most effective when dealing with SpatioTemporal Graphs when normalizing the inputs to smoothen out training and speed up convergence.
+The conclusion from running our experiments were that the [UnitedNorm](https://arxiv.org/pdf/2009.11746.pdf) technique that utilises a coalescence of LayerNorm, InstanceNorm, BatchNorm, GraphNorm and our novel TemporalNorm (transposition of existing normalisation strategies over the temporal layer, which employs a learnable shift) is most effective when dealing with SpatioTemporal Graphs when normalizing the inputs to smoothen out training and speed up convergence.
 
 ## Run Instructions:
 The experiments can be run by opening the jupyter notebooks in Google Colab and following these steps:
